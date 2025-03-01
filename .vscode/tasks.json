@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Tetris",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/*.cpp",
+                "-o",
+                "Tetris",
+                "-std=c++17"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build Tetris game"
+        }
+    ]
+}
